@@ -1,0 +1,12 @@
+[submodule "gap-riscv-gnu-toolchain"]
+	path = gap-riscv-gnu-toolchain
+	url = git@github.com:GreenWaves-Technologies/gap-riscv-gnu-toolchain.git
+[submodule "gap_sdk"]
+	path = gap_sdk
+	url = git@github.com:GreenWaves-Technologies/gap_sdk.git
+[submodule "gap8_openocd"]
+	path = gap8_openocd
+	url = git@github.com:GreenWaves-Technologies/gap8_openocd.git
+[submodule "gap_riscv_toolchain"]
+	path = gap_riscv_toolchain
+	url = git@github.com:GreenWaves-Technologies/gap_gnu_toolchain.git
