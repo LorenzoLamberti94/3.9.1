@@ -1,5 +1,11 @@
 # install
 
+os and gcc version
+```
+Ubuntu 20.04.6 LTS
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+```
+
 Tip: create a conda environment (and call it gap_sdk) to install all the packets needed by the sdk (pip commands below)
 
 ```
