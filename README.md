@@ -1,24 +1,45 @@
 # install
 
-os and gcc version
+## Prerequisites 
+
+#### OS and gcc version
 ```
 Ubuntu 20.04.6 LTS
 gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
 ```
 
-Tip: create a conda environment (and call it gap_sdk) to install all the packets needed by the sdk (pip commands below)
+#### Conda
+
+create a conda environment (and call it gap_sdk) to install all the packets needed by the sdk (pip commands below)
 
 ```
 conda create --name gap_sdk python==3.6.10 numpy cython
 conda activate gap_sdk
 ```
 
-PREREQUISITES: the following packages needed to be installed.
+#### packages for the sdk
+
 ```
 sudo apt-get install -y build-essential git libftdi-dev libftdi1 doxygen python3-pip libsdl2-dev curl cmake libusb-1.0-0-dev scons gtkwave libsndfile1-dev rsync autoconf automake texinfo libtool pkg-config libsdl2-ttf-dev
 ```
 
-## Toolchain
+#### Opencv3.2
+
+Unfortunately it is not ufficially supported anymore. But here's how to install it
+
+this is a repo that allows to do so: https://gist.github.com/syneart/3e6bb68de8b6390d2eb18bff67767dcb 
+To install execute the following
+
+```
+# wget -O - https://gist.githubusercontent.com/syneart/3e6bb68de8b6390d2eb18bff67767dcb/raw/OpenCV3.2withContrib.sh | bash
+```
+
+check if installed correctly:
+```
+ dpkg -l | grep libopencv
+```
+
+## Install Toolchain
 
 ```
 cd ~/gap_riscv_toolchain
@@ -28,7 +49,7 @@ cd ~/gap_riscv_toolchain
 ```
 
 
-## GAP SDK Install
+## Install GAP SDK
 
 ```
 cd gap_sdk
